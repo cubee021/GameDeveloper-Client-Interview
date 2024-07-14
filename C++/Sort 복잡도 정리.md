@@ -11,3 +11,5 @@
 |   Quick sort   |       O(1)       |         O(nlogn)          |         O(n^2)          |
 |   Count sort   |       O(n)       |           O(n)            |          O(n)           |
 |   Radix sort   |       O(n)       |           O(n)            |          O(n)           |
+
+O(1) < O(logn) < O(n) < O(nlogn) < O(n^2) < O(2^n) < O(n!)
