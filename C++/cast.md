@@ -54,3 +54,7 @@ NonConstFunc(const_cast<Some>(s))
 ## dynamic_cast
 
 클래스의 포인터나 참조에만 사용할 수 있으며 런타임에 캐스팅을 진행하게 됩니다. RTTI(Runtime Type Information)를 위한 캐스팅이라 할 수 있습니다. 다만 클래스간 virtual 함수가 있어야 하며 만일 다형성이 없는 객체들 간 캐스팅에서는 컴파일 에러가 나오게 됩니다,
+
+<br/>
+
+[참고!](https://junstar92.tistory.com/317)
