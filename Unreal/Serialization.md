@@ -23,8 +23,6 @@
 + 동기화 유지 - 네트워크 게임에서 모든 클라이언트와 서버가 동일한 정보를 가지도록 보장.
 + 성능 최적화 - 직렬화된 데이터는 최소한의 크기로 압축되어 전송되므로 네트워크 대역폭을 절약하고, 빠른 전송을 가능하게 한다.
 
-[자세히](https://kimteemo8729.tistory.com/41)
-
 ### 직렬화 되는 데이터의 종류
 ```cpp
 // Instigator : 효과를 유발한 주체. ex) 공격자 또는 능력을 시전한 캐릭터
@@ -36,6 +34,12 @@
 // World Origin : 효과가 발생한 월드 좌표
 ```
 
-### Project2 제작 당시 사용 예시
-https://github.com/cubee021/PlayAround_d/blob/768e76650edc6ab37f351cb0a621c35721ed901d/Project2/GameData/MyCharacterStat.h#L48-L53
+## FArchive
+[Project2 제작 당시 사용 예시](https://github.com/cubee021/PlayAround_d/blob/main/Project2/GameData/MyCharacterStat.h#L48)
+
+FArchive는 Unreal Engine의 직렬화 시스템의 중심이 되는 클래스입니다. 특히 멀티플레이어 게임에서 모든 작업을 추상화하고, 다양한 저장 매체 및 전송 경로에서 데이터를 일관되게 처리할 수 있도록 도와줍니다. 
+
+결론적으로, FArchive& Ar는 네트워크 또는 파일 시스템과 같은 외부 소스로 데이터를 읽고 쓰는 데 사용되는 데이터 스트림을 관리하는 중요한 객체입니다. 이 객체를 통해 FGameplayEffectBaseContext::NetSerialize와 같은 함수에서 데이터의 직렬화 및 역직렬화가 이루어지며, 이를 통해 네트워크 상에서 데이터 동기화를 유지할 수 있습니다.
+
+[자세히](https://kimteemo8729.tistory.com/41)
 
