@@ -12,7 +12,7 @@
 
 
 ### [FString](https://docs.unrealengine.com/4.27/ko/ProgrammingAndScripting/ProgrammingWithCPP/UnrealArchitecture/StringHandling/FString/)
-- 다른 두 클래스와 다르게 여러 조작이 가능한 클래스
+- 다른 두 클래스와 다르게 **여러 조작이 가능한** 클래스
 - 여러 검색, 텍스트 조작, Sub String 추출 등의 기능을 제공
 - 다른 두개의 클래스보다 상대적으로 무겁습니다.
 
