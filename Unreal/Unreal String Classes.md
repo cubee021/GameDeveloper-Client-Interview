@@ -17,7 +17,7 @@
 - 다른 두개의 클래스보다 상대적으로 무겁습니다.
 
 
-### [FText](https://docs.unrealengine.com/4.27/ko/ProgrammingAndScripting/ProgrammingWithCPP/UnrealArchitecture/StringHandling/FString/)
+### [FText](https://docs.unrealengine.com/4.27/ko/ProgrammingAndScripting/ProgrammingWithCPP/UnrealArchitecture/StringHandling/FText/)
 
 - 로컬라이징을 위한 문자열 클래스입니다.
 - UMG 등 여러가지 유저들에게 보이는 텍스트들은 이 클래스를 사용한다고 보시면 됩니다.
