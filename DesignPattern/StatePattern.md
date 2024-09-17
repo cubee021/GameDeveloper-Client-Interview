@@ -4,6 +4,42 @@
 
 한번에 한 상태만 가질 수 있는 FSM을 제작할 떄 많이 사용하게 되는 패턴입니다. 중첩 switch/case 문으로 구현할 수 있지만 상태가 많아질수록 이는 확장성이 떨어지기 떄문에 스테이트 패턴으로 구현할 수 있습니다.
 
+```cpp
+using UnityEngine;
+
+public class Minster : MonoBehaviour
+{
+    private enum State
+    {
+        Idle,
+        Move,
+        Attack
+    }
+    private State _state;
+
+    private void Start()
+    {
+        _state = State.Idle;
+    }
+
+    private void Update()
+    {
+          switch(_state)
+          {
+                case State.Idle:
+                    // Idle 행동 구현
+                    break;
+                case State.Moce:
+                    // Move 행동 구현
+                    break;
+                case State.Attack:
+                    // Attack 행동 구현
+                    break;
+          }
+      }
+}
+```
+
 ![좀비의 FSM을 구현한다면](https://user-images.githubusercontent.com/68003176/208879792-cdc3fbf2-069b-48c7-a975-ed53367093dd.png)
 
 
