@@ -24,8 +24,8 @@ public class Minster : MonoBehaviour
 
     private void Update()
     {
-          switch(_state)
-          {
+            switch(_state)
+            {
                 case State.Idle:
                     // Idle 행동 구현
                     break;
@@ -35,7 +35,7 @@ public class Minster : MonoBehaviour
                 case State.Attack:
                     // Attack 행동 구현
                     break;
-          }
+            }
       }
 }
 ```
